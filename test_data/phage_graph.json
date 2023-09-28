@@ -1,0 +1,19 @@
+{
+    "parameters info": {
+        "input": "../phages.fasta",
+        "k": 31,
+        "output prefix": "phage_graph"
+    },
+    "basic info": {
+        "vertex count": 28271
+    },
+    "contigs info": {
+        "maximal unitig count": 589,
+        "vertex count in the maximal unitigs": 28271,
+        "shortest maximal unitig length": 31,
+        "longest maximal unitig length": 727,
+        "sum maximal unitig length": 45941,
+        "avg. maximal unitig length": 78,
+        "_comment": "lengths are in bases"
+    }
+}
