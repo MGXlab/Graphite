@@ -37,6 +37,6 @@ Which has five columns:
 3) The end position in nucleotides on the query sequence 
 4) The original MEM length*
 
-So for example, `Reference:1_Sequence:MT952848.1` matches the first 112 nucleotidees with the second reference in the file (`test_data/phage_graph.cf_seq`)
+So for example, `Reference:1_Sequence:MT952848.1` matches the first 112 nucleotides with the second reference in the file (`test_data/phage_graph.cf_seq`)
 
 *The original MEM size corresponding to the LMEM, to get the LMEM length use end-start+1
