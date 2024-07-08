@@ -40,3 +40,10 @@ Which has five columns:
 So for example, `Reference:1_Sequence:MT952848.1` matches the first 112 nucleotides with the second reference in the file (`test_data/phage_graph.cf_seq`)
 
 *The original MEM size corresponding to the LMEM, to get the LMEM length use end-start+1
+
+#### Citation 
+
+If you use Graphite in your research, please cite:
+
+Rick Beeloo, Aldert L. Zomer, and Bas E. Dutilh. "Graphite: painting genomes using a colored De Bruijn graph". BioRXiv Preprint. DOI: 10.1101/2023.10.08.561343.
+https://www.biorxiv.org/content/10.1101/2023.10.08.561343v1.full
