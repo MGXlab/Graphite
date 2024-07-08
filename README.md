@@ -1,5 +1,5 @@
 # Graphite V2
-### _Find longest exact matches, LMEMS, in a collection of sequences_
+### _Find longest maximum exact matches, LMEMS, in a collection of sequences_
 
 _Graphite_ starts with two graph files (from Cuttlefish) and a set of query identifiers. It then builds a suffix array of the queries along with other datastructures to speed up matching. Then each sequence (i.e "reference") is read from the graph file and mapped onto the Suffix array. Each mapping is an identical sequence between the queries and ref, also called Maximum Exact Matches (MEMs). Each time a MEM is found its length is compared to previously discovered MEMs to only retain the Longest MEM (LMEM). 
 
