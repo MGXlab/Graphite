@@ -5,6 +5,14 @@ _Graphite_ starts with two graph files (from Cuttlefish) and a set of query iden
 
 
 #### Usage
+
+Make sure Julia is installed:
+
+Run `julia --version` if the command is not found install Julia from [here](https://julialang.org/downloads/).
+Then go to the package manager by first starting julia (`julia`) and pressing `]` then type:
+`add ArgPrase` and after that `add OrdereCollections` then you can leave julia (exit with `Backspace` and then typing `exit()`)
+
+
 Clone the repo 
 `git clone https://github.com/rickbeeloo/GraphiteV2` 
 This already includes [libasais](https://github.com/IlyaGrebnov/libsais) but can then only be used from within the `GraphiteV2` folder.
@@ -18,6 +26,9 @@ To use `graphite`:
 - `-k`, the k-mer size used to build the graph (i.e. 31 nucleotides)
 - `-q`, a file with query identifiers. These should match those in `-g` 
 - `-o`, the output file path
+
+To run with multiple threads add `NUM_JULIA_THREADS=X` before your command where `X` is the number of threads, for example:
+`NUM_JULIA_THREADS=10 julia main.jl .. `
 
 
 #### Output 
