@@ -22,7 +22,7 @@ To use `graphite`:
 `julia main.jl -g test_data/phage_graph.cf_seq -s test_data/phage_graph.cf_seg -k 31 -o test_data/output.txt -q test_data/query.txt`
 
 - `-g`,  the graph path file, when constructed using Cuttlefish the `.cf_seq` file.
-- `-s`, the node sequence file, when constructed using Cuttlefish the `.cf_seq` file 
+- `-s`, the node sequence file, when constructed using Cuttlefish the `.cf_seg` file 
 - `-k`, the k-mer size used to build the graph (i.e. 31 nucleotides)
 - `-q`, a file with query identifiers. These should match those in `-g` 
 - `-o`, the output file path

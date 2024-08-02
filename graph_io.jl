@@ -91,36 +91,35 @@ function writeResults(ca::Vector{Int32}, color::Color, query_ids::OrderedSet{Str
 
     info_vector = color.info_vector
 
-    prev_ori =  info_vector[1]
+    prev_ori = info_vector[1]
     aln_start = 1
     genome_loc = 0
     q_count = 1
 
-   
     for i in 1:length(info_vector)-1
-  
+        current_info = info_vector[i]
+        next_info = info_vector[i+1]
+
         if ca[i] > 0 
             node_id = get_original(ca[i])
             node_size = size_map[node_id]
             genome_loc += node_size - color.k_size + 1
         end
 
-        if ca[i+1] < 0 || prev_ori.id != info_vector[i+1].id || prev_ori.pos != info_vector[i+1].pos
-            if info_vector[i].len > 0 
-                println(h, query_ids[q_count], "\t", info_vector[i].id, "\t", aln_start, "\t", genome_loc+color.k_size-1, "\t", info_vector[i].len)
+        if ca[i+1] < 0 || prev_ori.id[] != next_info.id[] || prev_ori.pos[] != next_info.pos[]
+            if current_info.len[] > 0 
+                println(h, query_ids[q_count], "\t", current_info.id[], "\t", aln_start, "\t", genome_loc+color.k_size-1, "\t", current_info.len[])
             end
-            prev_ori = info_vector[i+1]
+            prev_ori = next_info
             aln_start = copy(genome_loc) + 1 
         end
 
         if ca[i+1] < 0
-            q_count +=1 
-            prev_ori = info_vector[i+1]
+            q_count += 1 
+            prev_ori = next_info
             genome_loc = 0
         end 
-
     end
-        
 
+    close(h)
 end
-
