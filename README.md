@@ -14,7 +14,7 @@ Then go to the package manager by first starting julia (`julia`) and pressing `]
 
 
 Clone the repo 
-`git clone https://github.com/rickbeeloo/GraphiteV2` 
+`git clone https://github.com/MGXlab/Graphite.git` 
 This already includes [libasais](https://github.com/IlyaGrebnov/libsais) but can then only be used from within the `GraphiteV2` folder.
 
 To use `graphite`:
